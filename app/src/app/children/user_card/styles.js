@@ -1,16 +1,29 @@
 /* eslint-disable import/no-anonymous-default-export */
 
 export default {
-    userCard: {
-        display: 'flex',        // Add this line to use flexbox
-        alignItems: 'center',   // To vertically align items in the middle
-        gap: '10px',           // Spacing between child elements (optional)
-      },
+  userCard: {
+    flex: "0 1",
+    display: "flex", // Add this line to use flexbox
+    alignItems: "center", // To vertically align items in the middle
+    gap: "10px", // Spacing between child elements (optional)
+  },
+  imageContainer: {
+    flexBasis: "15%",
+  },
+  image: {
+    maxWidth: "100%",
+  },
   userInfo: {
-    display: 'flex',
-    flexDirection: 'column', // Stack children vertically
+    flexBasis: "85%",
+    display: "flex",
+    flexDirection: "column",
+    gap: "5px",
   },
   username: {
-    fontWeight: 'bold', // Make username bold
-  }
-}
+    fontWeight: "bold",
+    margin: 0,
+  },
+  location: {
+    margin: 0,
+  },
+};
